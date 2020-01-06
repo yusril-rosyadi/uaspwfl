@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2019 at 06:37 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 5.6.40
+-- Waktu pembuatan: 06 Jan 2020 pada 16.57
+-- Versi server: 10.4.6-MariaDB
+-- Versi PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `log`
+-- Struktur dari tabel `log`
 --
 
 CREATE TABLE `log` (
@@ -37,7 +37,7 @@ CREATE TABLE `log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `log`
+-- Dumping data untuk tabel `log`
 --
 
 INSERT INTO `log` (`id`, `nim`, `no_hp_lama`, `no_hp_baru`, `tgl_diubah`) VALUES
@@ -58,7 +58,7 @@ INSERT INTO `log` (`id`, `nim`, `no_hp_lama`, `no_hp_baru`, `tgl_diubah`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mhs`
+-- Struktur dari tabel `mhs`
 --
 
 CREATE TABLE `mhs` (
@@ -71,7 +71,7 @@ CREATE TABLE `mhs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mhs`
+-- Dumping data untuk tabel `mhs`
 --
 
 INSERT INTO `mhs` (`id`, `nim`, `nama_mhs`, `jenis_kelamin`, `alamat`, `no_hp`) VALUES
@@ -92,7 +92,7 @@ INSERT INTO `mhs` (`id`, `nim`, `nama_mhs`, `jenis_kelamin`, `alamat`, `no_hp`) 
 (33, '444444444444444', 'yyyyyyyyy', 'P', 'yyyyyyyyyy', 'yyyyyyyyy');
 
 --
--- Triggers `mhs`
+-- Trigger `mhs`
 --
 DELIMITER $$
 CREATE TRIGGER `before_update` BEFORE UPDATE ON `mhs` FOR EACH ROW BEGIN 
@@ -108,8 +108,8 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Stand-in structure for view `tampil`
--- (See below for the actual view)
+-- Stand-in struktur untuk tampilan `tampil`
+-- (Lihat di bawah untuk tampilan aktual)
 --
 CREATE TABLE `tampil` (
 `id` int(11)
@@ -123,7 +123,7 @@ CREATE TABLE `tampil` (
 -- --------------------------------------------------------
 
 --
--- Structure for view `tampil`
+-- Struktur untuk view `tampil`
 --
 DROP TABLE IF EXISTS `tampil`;
 
@@ -134,29 +134,29 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 
 --
--- Indexes for table `log`
+-- Indeks untuk tabel `log`
 --
 ALTER TABLE `log`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `mhs`
+-- Indeks untuk tabel `mhs`
 --
 ALTER TABLE `mhs`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `log`
+-- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `mhs`
+-- AUTO_INCREMENT untuk tabel `mhs`
 --
 ALTER TABLE `mhs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;

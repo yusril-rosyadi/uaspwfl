@@ -126,8 +126,8 @@ class Crud extends CI_Controller
         $objPHPExcel = new PHPExcel();
 
         // membuat properties file mulai.
-        $objPHPExcel->getProperties()->setCreator("Arky");
-        $objPHPExcel->getProperties()->setLastModifiedBy("Arky");
+        $objPHPExcel->getProperties()->setCreator("Melati");
+        $objPHPExcel->getProperties()->setLastModifiedBy("Melati");
         $objPHPExcel->getProperties()->setTitle("Data Mahasiswa");
         $objPHPExcel->getProperties()->setSubject("");
         $objPHPExcel->getProperties()->setDescription("");

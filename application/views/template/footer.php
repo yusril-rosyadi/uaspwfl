@@ -1,10 +1,10 @@
 <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Diam adalah Bahasa Terbaik
+      Ver 0.0.1
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2019 <a href="#">Sakti Company</a>.</strong> 1.0.0.0.
+    <strong>Copyright &copy; 2019 <a href="#">Blooming</a>.</strong> 1.0.0.0.
   </footer>
 
   <!-- Control Sidebar -->
